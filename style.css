@@ -1,0 +1,28 @@
+.carousel-inner{
+    
+   height: 70vh;
+   width: 100%;
+}
+#carousel{
+background-color: beige;
+
+}
+/* .carousel-inner img{
+    width: 100%;
+    height: 100%;
+} */
+
+.cards-wrapper{
+    display: flex;
+    
+
+}
+.card{
+ margin: 15px;
+ padding: 15px;
+}
+
+.imagenStatus{
+    width: 23vw;
+    height: 30vw;
+}
