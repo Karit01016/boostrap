@@ -1,4 +1,11 @@
-
+.carousel-item{
+    width: 98vw !important;
+    height: 300px !important;
+}
+.carousel-item>img{
+    width: 100% !important;
+    height: 100% !important;
+}
 .nav-link:hover{
    border-radius: 18px;
 background-color: rgba(238, 53, 130, 0.911) ;    
