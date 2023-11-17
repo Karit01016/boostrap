@@ -1,14 +1,44 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<< stilos ancors >>>>>>>>>>>>>>>>>>>>>>>> */
 
 .nav-link:hover{
-   border-radius: 18px;
-background-color: rgba(238, 53, 130, 0.911) ;    
-} 
-.cards-wrapper{
-    display: flex;
+    border-radius: 18px;
+ background-color: rgba(238, 53, 130, 0.911) ;    
+ } 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>carrusel banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* .div-imagen>{
+    width: 100% !important;
+    height: 450px  !important;
+} */
+
+
+.carousel-item {
+    width: 100% !important;
+    height: 250px  !important;
+
 }
-.card{
- margin: 15px;
- padding: 15px;
+
+
+.carousel-item>img {
+    width: 98% !important;
+    height: 250px  !important;
+
+}
+.nav-link:hover{
+    border-radius: 18px;
+ background-color: rgba(238, 53, 130, 0.911) ;    
+ } 
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>carrusel son card>>>>>>>>>>>>>>> */
+.tamañoCard{
+    width: 18rem;
+    height: 28rem;
+     }
+ 
+.card>img{
+width: 18rem;
+height: 10rem;
 }
 .imagenStatus{
     width: 23vw;
