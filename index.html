@@ -47,6 +47,7 @@
       </div>
     </div>
   </nav>
+
   <!-- /*carrusel---------------------------------------------------------------------------------*/ -->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
@@ -58,17 +59,17 @@
         aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner  ">
-      <div class="carousel-item active ">
+      <div class="carousel-item carousel-item-banner active ">
         <img class="imagencarusel1 w-100 " src="./Recursos_Amazing_Events_Task_1/imgConciert.jpg" alt="...">
         <div class="carousel-caption  ">
-          <h5 class="TituloHome  fs-1 text-danger mt-5 ">Past Events </h5>
+          <h5 class="TituloHome  fs-1 text-danger mt-5 ">HOME </h5>
         </div>
       </div>
-      <div class="carousel-item  ">
+      <div class="carousel-item carousel-item-banner  ">
         <img src="./Recursos_Amazing_Events_Task_1/pexels-wendy-wei-1190298.jpg" class="d-block w-100" alt="...">
 
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item-banner">
         <img src="./Recursos_Amazing_Events_Task_1/pexels-thibault-trillet-167491.jpg" class="d-block w-100" alt="...">
 
       </div>
@@ -113,21 +114,19 @@
           <label class="form-check-label" for="inlineCheckbox5">Category</label>
         </div>
       </div>
-      <div class="Buscardor px-3 col-3 ">
-        <div class="">
+      <div class="Buscardor px-3 col-3 "> 
 
-          <div class="">
-            <form action=" ">
-              <div class="input-group ">
-                <input type="text" class="form-control" name="q" placeholder="Buscar...">
-                <button type="submit" class="btn btn-primary ">Buscar</button>
-              </div>
-            </form>
+
+
+        <form action=" ">
+          <div class="input-group ">
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+            <button type="submit" class="btn btn-primary ">Buscar</button>
           </div>
-        </div>
+        </form>
+
       </div>
     </div>
-  </div>
   </div>
 
 
@@ -135,31 +134,29 @@
   <!--
      --------------------------- carrusel con card------------------------------->
 
-  <div id="carouselExample " class="carousel slide">
-    <div id="carousel-Principal" class="carousel slide">
-      <div class="cards-wrapper icon-link-hover ">
+  <div id="carouselExample" class="carousel slide">
+
+    <div id="carousel-principal" class="carousel-inner">
 
 
-
-      </div>
     </div>
+    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  </div>
+
 
 
 
 
   <!-- --------------------------------footer -------------------------------------------------------->
-  <footer class="redesSociales  border border-danger mt-5 w-100">
-
+  <footer>
+<div  class="redesSociales   border-danger mt-5 w-100 p-2 "  >
 
     <a class="navbar-brand" href="https://www.facebook.com/">
       <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt="Logo" width="40" height="34"
@@ -173,10 +170,12 @@
       <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="Logo whatsapp" width="40" height="34"
         class="d-inline-block align-text-top" />
     </a>
-    <div class="cohort ">
-      <p> Karen Zarate</p>
-    </div>
 
+  </div>
+    <div class="cohor text-danger  ">
+      <p class="p-2 flex-shrink-1"> Karen Zarate</p>
+    </div>
+  
 
 
   </footer>
