@@ -198,29 +198,7 @@ const data = {
 let carrusel = document.getElementById("carousel-principal");
 pintarTarjetasde4en4(data.events, carrusel);
 
-let eventosPasados = filtrarArreglo(data.events, data.currentDate);
 
-console.log(data.events);
-
-function filtrarArreglopasados(arreglo, fecha) {
-  let nuevoArreglo;
-  for (let i = 0; index < arreglo.length; i++) {
-    if (arreglo[i].date < fecha) {
-      nuevoArreglo;
-    }
-  }
-  return nuevoArreglo;
-}
-
-function filtrarArregloFuturos(arreglo, fecha) {
-  let nuevoArreglo;
-  for (let i = 0; index < arreglo.length; i++) {
-    if (arreglo[i].date > fecha) {
-      nuevoArreglo;
-    }
-  }
-  return nuevoArreglo;
-}
 
 function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
   for (let i = 0; i < arregloEvents.length; i += 4) {
@@ -242,7 +220,7 @@ function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
         card.classList.add("card", "tamañoCard");
         card.innerHTML = `  
     <img src="${arregloEvents[j].image}" class="card-img-top" alt="...">
-    <div class="card-body bg-success  d-flex flex-column mb-3h-50">
+    <div class="card-body bg-danger d-flex flex-column mb-3h-50">
       <h5 class="card-title text-center ">${arregloEvents[j].name}</h5>
       <p class="card-text  p-2">${arregloEvents[j].description}</p>
    
@@ -251,7 +229,7 @@ function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
         
       </ul>
       </div>
-      <div class="seccionPrecioDetails   p-2 d-flex justify-content-between  "
+      <div class="seccionPrecioDetails  bg-danger   p-2 d-flex justify-content-between  "
       <li class="list-group-item ">Price:${arregloEvents[j].price}</li>
         <a href="#" class="btn btn-primary ">Details</a>
         </div>
