@@ -197,7 +197,7 @@ const data = {
 
 let carrusel = document.getElementById("carousel-Principal");
 console.log(carrusel);
-Pintatarjetasde4en4(data.events, carrusel);
+Pintatarjetasde4en4(eventosPasados, carrusel);
 
 
 
