@@ -1,3 +1,5 @@
+import { pintarTarjetasde4en4 } from "./modulos/funciones.js";
+
 const data = {
   currentDate: "2023-01-01",
   events: [
@@ -200,7 +202,7 @@ let carrusel = document.getElementById("carousel-principal");
 
 let eventosFuturos = filtrarArregloFuturos(data.events, data.currentDate);
 
-Pintatarjetasde4en4(eventosFuturos, carrusel);
+pintarTarjetasde4en4(eventosFuturos, carrusel);
 function filtrarArregloFuturos(arreglo, fecha) {  
   let nuevoArreglo = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -211,43 +213,20 @@ function filtrarArregloFuturos(arreglo, fecha) {
   return nuevoArreglo;
 }
 
-function Pintatarjetasde4en4(arregloEvents, divPrincipal) {
-  for (let i = 0; i < arregloEvents.length; i += 4) {
-    let carruselItem;
-    if (i < 4) {
-      carruselItem = document.createElement("div");
-      carruselItem.classList.add("carousel-item", "active");
-    } else {
-      carruselItem = document.createElement("div");
-      carruselItem.classList.add("carousel-item");
-    }
-    let contenedor = document.createElement("div");
-    contenedor.classList.add("d-flex", "justify-content-around");
 
-    for (let j = i; j < i + 4; j++) {
-      if (arregloEvents[j] != undefined) {
-        let card = document.createElement("div");
-        card.classList.add("card", "tamañoCard");
-        card.innerHTML = `
-                    <img src="${arregloEvents[j].image}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">${arregloEvents[j].name}</h5>
-                        <p class="card-text">${arregloEvents[j].description}</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Category: ${arregloEvents[j].category} </li>
-                        
-                    
-                    </ul>
-                    <div class="card-body d-flex justify-content-between ">
-                    <li class="list-group-item">Price: ${arregloEvents[j].price}</li>
-                        <buttom href="#" class=" btn btn-primary h-50">Details</buttom>
-                    </div>`;
-        console.log(card);
-        contenedor.appendChild(card);
-      }
-    }
-    carruselItem.appendChild(contenedor);
-    divPrincipal.appendChild(carruselItem);
-  }
+let buscarPalabra = document.getElementById("inputBusqueda");
+buscarPalabra.addEventListener("keyup", (e) => {
+  console.log(e.target.value);
+  let arregloIngresado = filtroEventoPalabra(data.events,e.target.value)
+  pintarTarjetasde4en4(arregloIngresado,carrusel)
+});
+
+function filtroEventoPalabra(arregloEvents,palabraClave) {
+  let arregloFiltrado = arregloEvents.filter(
+    (eventos) =>
+      eventos.name.toLowerCase().includes(palabraClave.toLowerCase()) ||
+      eventos.description.toLowerCase().includes(palabraClave.toLowerCase())
+  );
+  return arregloFiltrado;
 }
+filtroEventoPalabra(data.events, "Con");

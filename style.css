@@ -47,6 +47,22 @@ height:150px;
     color:black
 
 }
+.textoTarjetaNoEncontrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 25vh;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;   
+    color: aliceblue;
+    font-size: larger;
+   
+}
+
     
 
 
