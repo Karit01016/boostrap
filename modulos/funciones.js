@@ -36,7 +36,7 @@ export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
         </ul>
         </div>
         <div class="seccionPrecioDetails  bg-danger    p-2 d-flex justify-content-between  "
-        <li class="list-group-item ">Price:${arregloEvents[j].price}</li>
+        <li id="precioCards" class="list-group-item ">Price:${arregloEvents[j].price}</li>
           <a href="./details.html?id=${arregloEvents[j]._id}" class="btn btn-primary ">Details</a>
           </div>
         `;

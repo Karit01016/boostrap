@@ -196,9 +196,16 @@ const data = {
   };
 
 let urlstring = window.location.href
+
 let urlArmada = new URL (urlstring)
+
 let parametros = new URLSearchParams(urlArmada.search)
 
 let id = parametros.get("id")
-console.log(id);
+
 let data2 = data.events.filter( (evento) => evento._id == id)
+document.getElementById("imagenCard").innerHTML = data[0].image
+document.getElementById("tituloCards").innerHTML = data[0].name
+document.getElementById("descripcionCards").innerHTML = data[0].description
+document.getElementById("precioCards").innerHTML = data[0].price
+
