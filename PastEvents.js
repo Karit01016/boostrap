@@ -197,8 +197,7 @@ const data = {
   ],
 };
 
-let carrusel = document.getElementById("carousel-Principal");
-console.log(carrusel);
+
 pintarTarjetasde4en4(eventosPasados, carrusel);
 
 let contenedorCheckbox = document.getElementById("contenedorCheckbox");
@@ -216,10 +215,9 @@ pintarTarjetasde4en4(nuevoArregloCheckbox,carrusel )
 })
 
 
-
-
+// -----------------------buscadordePalabra-------------
 let buscarPalabra = document.getElementById("inputBusqueda");
-// -----------------------buscarPalabra-------------
+
 buscarPalabra.addEventListener("keyup", (e) => {
   console.log(e.target.value);
   let arregloIngresado = filtroEventoPalabra(data.events, e.target.value);

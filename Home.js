@@ -234,7 +234,7 @@ function filtroEventoPalabra(arregloEvents, palabraClave) {
   return arregloFiltrado;
 }
 filtroEventoPalabra(data.events, " ");
-
+// checkbox
 function pintarCheckbox(arregloCategory, divPrincipalCheckbox) {
   for (let j = 0; j < arregloCategory.length; j++) {
     if (arregloCategory[j] != undefined) {

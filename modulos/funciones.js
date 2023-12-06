@@ -1,8 +1,7 @@
 //--------------------------- funcion pintar tarjetas--------------------------------------------------------------
 export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {  
   divPrincipal.innerHTML = " ";
-  if (arregloEvents.length == 0) {
-    
+  if (arregloEvents.length == 0) {  
     
     divPrincipal.innerHTML = `<div class="hola"><p class="textoTarjetaNoEncontrada" > "No events found,  try again! </p> </div>
       `;
@@ -47,3 +46,5 @@ export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
     divPrincipal.appendChild(carruselItem);
   }
 }
+
+
