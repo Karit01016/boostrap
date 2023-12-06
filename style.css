@@ -78,3 +78,9 @@ th, tr, td, tbody, thead{
 
 
 }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>details>>>>>>>>>>>><<<< */
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}

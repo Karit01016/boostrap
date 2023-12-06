@@ -212,7 +212,16 @@ function filtrarArregloFuturos(arreglo, fecha) {
   }
   return nuevoArreglo;
 }
+pintarCheckbox(nuevoArrayCategory,contenedorCheckbox);  
+contenedorCheckbox.addEventListener("change",e =>{
 
+  let inputCheckeados = Array.from(document.querySelectorAll("input[Type=checkbox]:checked")).map(inputs => inputs.value.toLowerCase())
+let nuevoArregloCheckbox = filtrarPorCheckbox(data.events,inputCheckeados)
+
+pintarTarjetasde4en4(nuevoArregloCheckbox,carrusel )
+  
+ 
+})
 
 let buscarPalabra = document.getElementById("inputBusqueda");
 buscarPalabra.addEventListener("keyup", (e) => {
@@ -230,3 +239,32 @@ function filtroEventoPalabra(arregloEvents,palabraClave) {
   return arregloFiltrado;
 }
 filtroEventoPalabra(data.events, "Con");
+
+// <<<<<<<<<<<<<<<checkbox>>>>>>>>>>
+function pintarCheckbox(arregloCategory, divPrincipalCheckbox) {
+  for (let j = 0; j < arregloCategory.length; j++) {
+    if (arregloCategory[j] != undefined) {
+      let checkbox = document.createElement("div");
+      checkbox.classList.add("form-check", "form-check-inline");
+      checkbox.innerHTML = `      
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1 ${arregloCategory[j]}" value="${arregloCategory[j]}" />
+      <label class="form-check-label" for="${arregloCategory[j]}">${arregloCategory[j]}</label>
+      
+      `;
+      divPrincipalCheckbox.appendChild(checkbox);
+    }
+  }
+}
+
+
+
+function filtrarPorCheckbox(arreglo,arreglochekeados){
+let arregloFinal = arreglo.filter(events => arreglochekeados.includes(events.category.toLowerCase()))
+if (arregloFinal.length == 0) {
+  arregloFinal = arreglo
+
+
+}
+return arregloFinal
+
+}
