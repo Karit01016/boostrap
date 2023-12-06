@@ -48,9 +48,9 @@ height:150px;
 
 }
 .textoTarjetaNoEncontrada{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
     width: 20vw;
     height: 25vh;
     background-color: brown;
@@ -62,11 +62,11 @@ height:150px;
     font-size: larger;
    
 }
-
-    
-
-
-
+.hola{
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+}
 
 /* >>>>>>>>>>>>>>>>>>>>>>CONTACT>>>>>>>>>>>>>>> */
 .imagenStatus{

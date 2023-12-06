@@ -204,11 +204,15 @@ let contenedorCheckbox = document.getElementById("contenedorCheckbox");
 let nuevoArrayCategory = Array.from( new Set(data.events.map(evento  => evento.category)));
 
 pintarCheckbox(nuevoArrayCategory,contenedorCheckbox);  
-contenedorCheckbox.addEventListener("change",e=>{
-  let inputCheckeado =   Array.from(document.querySelectorAll("input[Type=checkbox]:checked")).map(checkbox => checkbox.value.toLowerCase())
+contenedorCheckbox.addEventListener("change",e =>{
 
+  let inputCheckeados = Array.from(document.querySelectorAll("input[Type=checkbox]:checked")).map(inputs => inputs.value.toLowerCase())
+let nuevoArregloCheckbox = filtrarPorCheckbox(data.events,inputCheckeados)
+
+pintarTarjetasde4en4(nuevoArregloCheckbox,carrusel )
+  
+ 
 })
-
 
 
 
@@ -246,5 +250,16 @@ function pintarCheckbox(arregloCategory, divPrincipalCheckbox) {
   }
 }
 
-// function filtrarCheckbox(arregloCategory,contenedorCheckbox)
-// contenedorCheckbox.addEventListener("change")
+
+
+function filtrarPorCheckbox(arreglo,arreglochekeados){
+let arregloFinal = arreglo.filter(events => arreglochekeados.includes(events.category.toLowerCase()))
+if (arregloFinal.length == 0) {
+  arregloFinal = arreglo
+
+
+}
+return arregloFinal
+
+}
+
