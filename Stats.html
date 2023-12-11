@@ -1,222 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stats Amazing Eventst</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="icon"
-      href="./Recursos_Amazing_Events_Task_1/favicon.png"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./Recursos_Amazing_Events_Task_1/amazing_brand.png"
-            alt="logo"
-            width="160"
-            height="40"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item fs-3 border border-danger-subtle rounded-4">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item fs-3 border border-danger-subtle rounded-4">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./UpcomingEvents.html"
-                >Upcoming Events</a
-              >
-            </li>
-            <li class="nav-item fs-3 border border-danger-subtle rounded-4">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./PastEvents.html"
-                >Past Events</a
-              >
-            </li>
-            <li class="nav-item fs-3 border border-danger-subtle rounded-4">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./Contact.html"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item fs-3 border border-danger-subtle rounded-4">
-              <a class="nav-link active" aria-current="page" href="#">Stats</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- -------------------------------------------- carrusel titulo-------------------------------------------- -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner  ">
-        <div class="carousel-item carousel-item-banner active ">
-          <img class="imagencarusel1 w-100 " src="./Recursos_Amazing_Events_Task_1/imgConciert.jpg" alt="...">
-          <div class="carousel-caption  ">
-            <h5 class="TituloHome  fs-1 text-danger mt-5 ">STATS</h5>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-banner  ">
-          <img src="./Recursos_Amazing_Events_Task_1/pexels-wendy-wei-1190298.jpg" class="d-block w-100" alt="...">
-  
-        </div>
-        <div class="carousel-item carousel-item-banner">
-          <img src="./Recursos_Amazing_Events_Task_1/pexels-thibault-trillet-167491.jpg" class="d-block w-100" alt="...">
-  
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats Amazing Eventst</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="icon" href="./Recursos_Amazing_Events_Task_1/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" alt="logo" width="160" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-3 border border-danger-subtle rounded-4">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item fs-3 border border-danger-subtle rounded-4">
+            <a class="nav-link active" aria-current="page" href="./UpcomingEvents.html">Upcoming Events</a>
+          </li>
+          <li class="nav-item fs-3 border border-danger-subtle rounded-4">
+            <a class="nav-link active" aria-current="page" href="./PastEvents.html">Past Events</a>
+          </li>
+          <li class="nav-item fs-3 border border-danger-subtle rounded-4">
+            <a class="nav-link active" aria-current="page" href="./Contact.html">Contact</a>
+          </li>
+          <li class="nav-item fs-3 border border-danger-subtle rounded-4">
+            <a class="nav-link active" aria-current="page" href="#">Stats</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    ------------------------------------------------table----------------------------------------------------------
-   <div class="d-flex justify-content-center p-5 align-items-center ">
-    <table class="table table-bordered border-primary">
-      <thead class="table-danger ">
-        <tr>
-          <th  colspan="3">Events statics</th>
-      </tr>
-      </thead>
-      <tbody class="">
-        <td>Events with highest % of assistance</td>
-          <td>Events with lowest % of assistance</td>
-          <td>Events with longer capacity</td>
+  </nav>
+  <!-- -------------------------------------------- carrusel titulo-------------------------------------------- -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner  ">
+      <div class="carousel-item carousel-item-banner active ">
+        <img class="imagencarusel1 w-100 " src="./Recursos_Amazing_Events_Task_1/imgConciert.jpg" alt="...">
+        <div class="carousel-caption  ">
+          <h5 class="TituloHome  fs-1 text-danger mt-5 ">STATS</h5>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-banner  ">
+        <img src="./Recursos_Amazing_Events_Task_1/pexels-wendy-wei-1190298.jpg" class="d-block w-100" alt="...">
+
+      </div>
+      <div class="carousel-item carousel-item-banner">
+        <img src="./Recursos_Amazing_Events_Task_1/pexels-thibault-trillet-167491.jpg" class="d-block w-100" alt="...">
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  ------------------------------------------------table----------------------------------------------------------
+  <div class="d-flex justify-content-center p-5 align-items-center ">
+    <table id="contenedorTablaStats" class="table table-bordered border-primary">
+      <thead  class=" table-danger text-center">
+        <tr >
+          <th colspan="3">Events statics</th>
         </tr>
-        <tr class=" ">
+      </thead>
+      <tbody class="text-center" id="cuerpoTabla">
+        <tr id="Tr">
+        <td>Events with highest % of assistance</td>
+        <td>Events with lowest % of assistance</td>
+        <td>Events with longer capacity</td>
+        </tr>
+        <!-- <tr class=" ">
           <td>. </td>
           <td></td>
           <td></td>
         </tr>
-        <tr class="tablaTitulo2 table-danger ">
-          <th colspan="3">Upcoming  Events statics by Category</th>
-      </tr>
-      <tr>
-        <td>Categories</td>
-        <td>Pevenues</td>
-        <td>Percentage of assistance</td>
-      </tr>
-      <tr>
-        <td>.</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>.</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="table-danger">
-        <th  colspan="3">Past Events statics by category</th>
-    </tr>
-    <tr>
-      <td>Categories</td>
-      <td>Pevenues</td>
-      <td>Percentage of assistance</td>
-    </tr>
-    <tr>
-      <td>.</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>.</td>
-      <td></td>
-      <td></td>
-    </tr>
+        <tr  id="tabla2" class="tablaTitulo2 table-danger ">
+          <th colspan="3">Upcoming Events statics by Category</th>
+        </tr>
+        <tr class="tr2">
+          <td  class="tituloTabla2col-4">Categories</td>
+          <td  class="tituloTa">Pevenues</td>
+          <td  class="col-4">Percentage of assistance</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="table-danger">
+          <th colspan="3">Past Events statics by category</th>
+        </tr>
+        <tr>
+          <td>Categories</td>
+          <td>Pevenues</td>
+          <td>Percentage of assistance</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td></td>
+          <td></td>
+        </tr> -->
       </tbody>
     </table>
 
-   </div>
-   
-    <!-- ----------------------------------------------footer------------------------------------------- -->
-    <footer class="redesSociales  border border-danger mt-5">
-      
-              
+  </div>
+
+  <!-- ----------------------------------------------footer------------------------------------------- -->
+  <footer class="d-flex align-items-end p-1">
+
+    <div class="redesSociales   border-danger  w-75 p-2 ">
       <a class="navbar-brand" href="https://www.facebook.com/">
-        <img
-          src="./Recursos_Amazing_Events_Task_1/facebook.png"
-          alt="Logo"
-          width="40"
-          height="34"
-          class="d-inline-block align-text-top"
-        />
+        <img src="./Recursos_Amazing_Events_Task_1/facebook.png" alt="Logo" width="40" height="34"
+          class="d-inline-block align-text-top" />
       </a>
       <a class="navbar-brand" href="https://www.instagram.com/">
-        <img
-          src="./Recursos_Amazing_Events_Task_1/instagram.png"
-          alt="instagram"
-          width="40"
-          height="34"
-          class="d-inline-block align-text-top"
-        />
+        <img src="./Recursos_Amazing_Events_Task_1/instagram.png" alt="instagram" width="40" height="34"
+          class="d-inline-block align-text-top" />
       </a>
       <a class="navbar-brand" href="https://web.whatsapp.com/">
-        <img
-          src="./Recursos_Amazing_Events_Task_1/whatsapp.png"
-          alt="Logo whatsapp"
-          width="40"
-          height="34"
-          class="d-inline-block align-text-top"
-        />
+        <img src="./Recursos_Amazing_Events_Task_1/whatsapp.png" alt="Logo whatsapp" width="40" height="34"
+          class="d-inline-block align-text-top" />
       </a>
-      <div class="cohort ">
-        <p>  Karen Zarate</p>
-      </div>
-   
 
+    </div>
+    <div class="cohor text-danger w-75 d-flex justify-content-end p-1 ">
+      <p class="flex-shrink-1"> Create by Karen Zarate</p>
+    </div>
 
-</footer>
-<!-- --------------------------------script -------------------------------------------------------->
-<script src="./modulos/funciones.js" type="module"></script>
-<script src="./Stats.js" type="module"></script>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-crossorigin="anonymous"
-></script>
+  </footer>
+  <!-- --------------------------------script -------------------------------------------------------->
+  <script src="./modulos/funciones.js" type="module"></script>
+  <script src="./Stats.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

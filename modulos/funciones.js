@@ -1,8 +1,7 @@
 //--------------------------- funcion pintar tarjetas--------------------------------------------------------------
-export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {  
+export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
   divPrincipal.innerHTML = " ";
-  if (arregloEvents.length == 0) {  
-    
+  if (arregloEvents.length == 0) {
     divPrincipal.innerHTML = `<div class="hola"><p class="textoTarjetaNoEncontrada" > "No events found,  try again! </p> </div>
       `;
   }
@@ -47,4 +46,49 @@ export function pintarTarjetasde4en4(arregloEvents, divPrincipal) {
   }
 }
 
+//  <<<<<<<<<<<<<<<<<<<<<<<<funcion filtro por palabra clave<<<<<<<<<<<<<<<
+export function filtroEventoPalabra(arregloEvents, palabraClave) {
+  let arregloFiltrado = arregloEvents.filter(
+    (eventos) =>
+      eventos.name.toLowerCase().includes(palabraClave.toLowerCase()) ||
+      eventos.description.toLowerCase().includes(palabraClave.toLowerCase())
+  );
+  return arregloFiltrado;
+}
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<funcion pintar checbox>>>>>>>>>>>>>>>>>
+
+export function pintarCheckbox(arregloCategory, divPrincipalCheckbox) {
+  for (let j = 0; j < arregloCategory.length; j++) {
+    if (arregloCategory[j] != undefined) {
+      let checkbox = document.createElement("div");
+      checkbox.classList.add("form-check", "form-check-inline");
+      checkbox.innerHTML = `      
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1 ${arregloCategory[j]}" value="${arregloCategory[j]}" />
+      <label class="form-check-label" for="${arregloCategory[j]}">${arregloCategory[j]}</label>
+      
+      `;
+      divPrincipalCheckbox.appendChild(checkbox);
+    }
+  }
+}
+
+export function filtrarPorCheckbox(arreglo, arreglochekeados) {
+  let arregloFinal = arreglo.filter((events) =>
+    arreglochekeados.includes(events.category.toLowerCase())
+  );
+  if (arregloFinal.length == 0) {
+    arregloFinal = arreglo;
+  }
+  return arregloFinal;
+}
+// <<<<<<<<<<<<<<<<<<filtro de arreglos eventos futuros<<<<<<<<<<<zzzzzzzzzzzz
+export function filtrarArregloFuturos(arreglo, fecha) {
+  let nuevoArreglo = [];
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i].date > fecha) {
+      nuevoArreglo.push(arreglo[i]);
+    }
+  }
+  return nuevoArreglo;
+}
